@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base
 
   def to_s
-    prepend(first_name, " ", last_name)
+    prepend(self.first_name, " ", self.last_name)
   end
 
 end
